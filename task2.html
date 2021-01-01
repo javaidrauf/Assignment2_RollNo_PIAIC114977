@@ -1,0 +1,32 @@
+<!-- Q2: Write a program to take input on the marks obtained in three subjects & total marks.
+Compute & show the resulting percentage on your page. Take percentage & compute grade as
+per following table: -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task2</title>
+</head>
+<body>
+    <script>
+        var marks = prompt("Pls enter marks obtained in the three subjects");
+        var totalmarks = prompt("Pls enetr total marks of three subjects");
+        var percent = Math.round ((marks / totalmarks)*100);
+        alert("Your percentage is: " + percent +"%");
+    
+        if (percent >= 80){
+            alert("Your Grade is: 'A-one'" +" " + "Remarks: Excellent!");
+        }
+        else if (percent >= 70 && percent < 80){
+            alert("Your Grade is: 'A'" +" "+ "Remarks: Good!");
+        }
+        else if (percent >= 60 && percent < 70){
+            alert("Your Grade is: 'B'" +" "+ "You need to improve!");
+        }    
+        else {
+            alert("Fail" +" "+ "Sorry!");
+        }    
+    </script>
+    
+</body>
+</html>

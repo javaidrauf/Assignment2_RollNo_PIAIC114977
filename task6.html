@@ -1,0 +1,23 @@
+<!-- Q6: Declare and Initialize an array and store available education qualifications in Pakistan (e.g.
+SSC, HSC, BCS, BS, BCOM, MS, M. Phil., PhD). Show the listed qualifications in your browser
+like:-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>task6</title>
+</head>
+<body>
+    <script>
+        var Pakistan = ["SSC","HSC","BCS","BS","BCOM","MS","M. Phil","PhD"];
+        var array = [];
+        for(var i=0;i<8;i++){
+        j=i+1;
+        array +=("Qualifications: \n"+ j +")" +" "+ Pakistan[i]);
+        }
+        array.slice(0,7); 
+        alert(array);
+        
+    </script>
+    
+</body>
+</html>
